@@ -1,17 +1,61 @@
 # Frontend OpticaMiroo
 
-Instrucciones para la configuración y ejecución del proyecto
+# **Instrucciones para instalar y ejecutar el frontend (React + Vite)**
 
-Iniciar XAMPP: Antes de comenzar, asegúrate de tener XAMPP instalado y en ejecución. Abre el panel de control de XAMPP y activa los servicios de Apache y MySQL. Esto es fundamental para que el sistema pueda conectarse correctamente a la base de datos local.
+## **Instalación**
 
-Creación del esquema en MySQL: Una vez que MySQL esté activo, accede a phpMyAdmin o utiliza tu cliente de base de datos preferido para crear un nuevo esquema con el nombre base. Este esquema será utilizado por el backend para almacenar y gestionar la información de la aplicación.
+1. **Instalar Node.js**
+   Descárgalo desde: [https://nodejs.org](https://nodejs.org)
+   Instala la versión **LTS (recomendada)**.
 
-Verificación de las tablas: Revisa si las tablas necesarias ya están creadas y pobladas en el esquema. Si no es así, deberás ejecutar el script SQL correspondiente para generar la estructura y los datos iniciales. Esto garantiza que la aplicación cuente con la información mínima necesaria para funcionar correctamente.
+2. **Verificar instalación**
+   Abre una terminal y ejecuta:
 
-Ejecución del backend (Spring Boot): Abre el proyecto backend en Visual Studio Code (VS Code) o en tu entorno de desarrollo preferido. Asegúrate de que las dependencias estén correctamente instaladas y luego inicia el servidor de Spring Boot. Una vez ejecutado, el backend debería conectarse automáticamente a la base de datos “base” que configuraste en el paso anterior.
+   ```
+   node -v
+   npm -v
+   ```
 
-Ejecución del frontend (React): Finalmente, abre una terminal en la carpeta del proyecto React y ejecuta el siguiente comando:
+   Si aparecen números de versión, está correctamente instalado.
 
+---
+
+## **Ejecución del frontend**
+
+1. **Entrar a la carpeta del frontend**
+
+   ```
+   cd frontend
+   ```
+
+2. **Instalar dependencias**
+   Ejecutar este comando solo la primera vez:
+
+   ```
+   npm install
+   ```
+
+3. **Iniciar el servidor de desarrollo**
+
+   ```
+   npm run dev
+   ```
+
+4. **Abrir la aplicación**
+   En la terminal aparecerá algo como:
+
+   ```
+   Local: http://localhost:5173/
+   ```
+
+   Abre ese enlace en tu navegador.
+
+---
+
+## **Resumen rápido**
+
+```
+cd frontend
+npm install
 npm run dev
-
-Este comando iniciará el servidor de desarrollo de React. Una vez en funcionamiento, podrás visualizar la aplicación desde tu navegador web, usualmente en la dirección: http://localhost:5173/ (o el puerto que se indique en la terminal).
+```
